@@ -4,45 +4,64 @@
    <meta charset="UTF-8"/>
    <style>
 		table {
-		background-color: aliceblue;
-		border-collapse: collapse;
+			border-collapse: collapse;
+			background-color: aliceblue;
+			font-family: Calibri;
+			font-size: 16px;
+			width: 100%;
 			  }
-		 td, th {
-		 border: 1px solid black;
-			}
+		tr {
+			border-bottom: 1px solid #ddd;
+		   }
+		td {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+		   }
+		th {
+			padding: 5px;
+			text-align:left;
+			
+		   }		   
+		caption {
+				background-color: powderblue;
+				font-size: 20px;
+				padding: 15px;
+				}
     </style>
 <body>
 <table>
 	<caption> Skrzynka odbiorcza </caption>
 	<tr>
-		<th></th>
-		<th>Temat</th>
-		<th>Nadawca</th>
-		<th>Data</th>
+		<th style="width: 5%"></th>
+		<th style="width: 50%">Temat</th>
+		<th style="width: 30%">Nadawca</th>
+		<th style="width: 15%; text-align: right">Data</th>
 	</tr>
 	<tr>
-		<td>&#9734;</td>
+		<td style="text-align: center">&#9734;</td>
 		<td>sprawdzian</td>
 		<td>Tomasz</td>
-		<td>pn, 10:30</td>
+		<td style="text-align: right">pn, 10:30</td>
 	</tr>
 	<tr>
-		<td>&#9734;</td>
+		<td style="text-align: center">&#9734;</td>
 		<td>praca domowa</td>
 		<td>Leon</td>
-		<td>wt, 12:30</td>
+		<td style="text-align: right">wt, 12:30</td>
 	</tr>
-	<tr>
-		<th>&#9733;</th>
+	<tr style="color:blue;">
+		<th style="text-align: center">&#9733;</th>
 		<th>zadanie - kalkulator</th>
 		<th>Anna</th>
-		<th>śr, 12:30</th>
+		<th style="text-align: right">śr, 12:30</th>
 	</tr>
 	<tr>
-		<td>&#9734;</td>
+		<td style="text-align: center">&#9734;</td>
 		<td>praca z środy</td>
 		<td>Wiki</td>
-		<td>pt, 15:30</td>
+		<td style="text-align: right">pt, 15:30</td>
 	</tr>
 </table>
 </body>
