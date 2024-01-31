@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+	<title>text</title>
+	<style>
+		form {
+			 font-family: Calibri;
+			 font-size: 16px;
+			 }
+		fieldset {
+				  width: 300px;
+				  padding: 20px
+				 }
+		textarea {
+				  background-color: aliceblue;
+				  border: 1px solid red;
+				  font-family: Courier New;
+				  height: 50px;
+				  width: 100%
+				 }
+		input.ok:hover {
+						background-color: steelblue;
+						padding: 5px;
+					   }
+		input.xd {
+			   background-color: aliceblue;
+		       border: 2px solid steelblue;
+			   padding: 5px;
+			  }
+		}
+	</style>
+</head>
+<body>
+	<form> 
+	<fieldset>
+		<legend>Napisz komentarz</legend>
+		<br>
+		<label for="message">Treść:</label><br/>
+		<textarea id="message" name="message" rows="5" cols="50">
+		
+		</textarea><br/>
+		<label for="message2">Autor:</label><br/>
+		<input class="xd">
+		
+		</input>
+		 <br/>
+		  <br/>
+		<input class="ok" type="submit" value="Wyślij komentarz">
+	</fieldset>
+	</form>
+</body>
+</html>
+
