@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8"/>
+   <title>rejestracja</title>
+	 <style>
+	table {
+	border-collapse: collapse;
+	border: 1px solid #D3D3D3;
+	table-layout: fixed;
+	padding: 15 px;
+	width: 100%;
+	      }
+	td { 
+	border: 1px solid #D3D3D3;
+	padding: 10px;
+	   } 
+	 </style>
+</head>
+<body>
+<form action="siema.html">
+	<table>
+		<tr>
+			<td style="text-align: right"> Imię:</td>
+			<td> <input> </td>
+			<td style="text-align: right"> Nazwisko:</td>
+			<td> <input> </td>
+			<td style="text-align: right"> Miejscowość urodzenia:</td>
+			<td> <input> </td>
+		</tr>
+		<tr>
+			<td style="text-align: right"> Drugie imię:</td>
+			<td> <input> </td>
+			<td style="text-align: right"> Data urodzenia:</td>
+			<td> </td>
+			<td style="text-align: right"> Województwo urodzenia:</td>
+			<td> <select name="woj" id="woj">
+			<option value="dolno">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="alfa_romeo">Alfa Romeo</option>
+			<option value="bmw" disabled>BMW</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+			<option value="mercedes">Mercedes</option>
+		</select> </td>
+		</tr>
+		<tr>
+			<td colspan="6" style="text-align: center"><input type="submit" value="Wyślij"</input> </td>
+		</tr>
+	</table>
+</form>
+</body>
+<html>
