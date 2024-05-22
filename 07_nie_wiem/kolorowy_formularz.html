@@ -7,6 +7,7 @@
 		body {
 		font-family: Arial;
 		font-size: 1px;
+		background: papayawhip;
 		}
 		table{
 		width: 400px; 
@@ -27,8 +28,12 @@
 			<td><input id="text" name="2imie" placeholder="drugie imię" type="text"></td>
 		</tr>
 		<tr>
-			<td><input min="-10" max="0" name="wspolczynnik" oninput="getElementById('wsp').value=this.value" step="0.1" type="range" value="-10"></td>
-			<td><output id="wsp">-10</output></td>
+			<td>
+				<input min="-10" max="0" name="wspolczynnik" oninput="getElementById('wsp').value=this.value" step="0.1" type="range" value="-10">
+			</td>
+			<td>
+				<output id="wsp">-10</output>
+			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
