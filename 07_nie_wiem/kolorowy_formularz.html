@@ -5,27 +5,42 @@
 	<title>Kolorowy formularz</title>
 	<style>
 		body {
-		font-family: Arial;
-		font-size: 1px;
-		background: papayawhip;
+			font-family: Arial;
+			font-size: 1rem;
+			background: papayawhip;
 		}
 		table{
-		width: 400px; 
-		border-collapse: collapse;
-		background: papayawhip;
+			width: 400px; 
+			border-collapse: collapse;
+			background: papayawhip;
 		}
 		td {
-		border: 1px solid goldenrod;
-		padding: 10px;
-		text-align: justify;
+			border: 1px solid goldenrod;
+			padding: 10px;
+			text-align: justify;
+		}
+		textarea {
+            background-color: sandybrown;
+            border: 1px solid saddlebrown;
+            border-radius: 2px;
+        }
+		input {
+			background-color: LavenderBlush;
+            border: 1px solid saddlebrown;
+            border-radius: 2px;
+            line-height: 1.5;
 		}
 	</style>
 </head>
 <body>
 	<table>
 		<tr>
-			<td><input id="text" name="imię" placeholder="pierwsze imię" type="text"></td>
-			<td><input id="text" name="2imie" placeholder="drugie imię" type="text"></td>
+			<td> 
+				<input id="text" name="imię" placeholder="pierwsze imię" type="text"> 
+			</td>
+			<td> 
+				<input id="text" name="2imie" placeholder="drugie imię" type="text"> 
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -37,18 +52,36 @@
 		</tr>
 		<tr>
 			<td colspan="2">
+				<textarea cols="48" rows="5"> </textarea>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<label for="search">szukaj</label>
-				<input type="search" name="search">
+				<label for="search"></label>
+				<input type="search" placeholder="szukaj">
 			</td>
-			<td></td>
+			<td>
+				<label for="datalist"></label>
+				<input list="imiona" id="postac" placeholder="wybierz postac" name="postacie">
+				<datalist id="imiona">
+					<option value="Jack">
+					<option value="Wendy">
+					<option value="Danny">
+				</datalist>
+			</td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
+			<td>
+				<button onclick="alert('witam');" type="button">Pokaż okienko alert()</button>
+			</td>
+			<td> 
+				<input type="reset" value="Resetuj">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input alt="Submit" src="https://loremflickr.com/350/200/cat" type="image">
+			</td>
 		</tr>
 	</table>
 </body>
